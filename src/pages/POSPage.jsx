@@ -19,7 +19,7 @@ function POSPage() {
 
   const fetchProducts = async() => {
     setIsLoading(true);
-    const result = await axios.get('https://products-coxs.onrender.com/');
+    const result = await axios.get('https://products-coxs.onrender.com/products');
     setProducts(await result.data);
     setIsLoading(false);
   }
