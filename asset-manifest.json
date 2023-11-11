@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/POS-APP/static/css/main.762550e9.css",
-    "main.js": "/POS-APP/static/js/main.b5d7f82a.js",
+    "main.js": "/POS-APP/static/js/main.d5d34380.js",
     "index.html": "/POS-APP/index.html",
     "main.762550e9.css.map": "/POS-APP/static/css/main.762550e9.css.map",
-    "main.b5d7f82a.js.map": "/POS-APP/static/js/main.b5d7f82a.js.map"
+    "main.d5d34380.js.map": "/POS-APP/static/js/main.d5d34380.js.map"
   },
   "entrypoints": [
     "static/css/main.762550e9.css",
-    "static/js/main.b5d7f82a.js"
+    "static/js/main.d5d34380.js"
   ]
 }
