@@ -9,10 +9,11 @@ import POSPage from './pages/POSPage';
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<HomePage/>} />
-        <Route path="/pos" element={<POSPage/>} />
+     <Routes>
+        <Route path="/POS-APP" element={<HomePage />} />
+        <Route path="/POS-APP/" element={<POSPage />} />
       </Routes>
+
     </Router>
   );
 }
