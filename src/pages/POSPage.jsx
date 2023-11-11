@@ -17,12 +17,22 @@ function POSPage() {
     pauseOnHover: true,
   }
 
-  const fetchProducts = async() => {
-    setIsLoading(true);
-    const result = await axios.get('https://products-coxs.onrender.com/products');
-    setProducts(await result.data);
+  const API_BASE_URL = 'https://products-coxs.onrender.com';
+
+const fetchProducts = async () => {
+  setIsLoading(true);
+  const url = `${API_BASE_URL}/products`;
+  console.log('Requesting:', url);
+  try {
+    const result = await axios.get(url);
+    setProducts(result.data);
+  } catch (error) {
+    console.error('Error fetching products:', error);
+  } finally {
     setIsLoading(false);
   }
+};
+
 
   const addProductToCart = async(product) =>{
     // check if the adding product exist
